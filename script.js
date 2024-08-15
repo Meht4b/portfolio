@@ -2,6 +2,14 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+window.onmousemove = e => {
+    var cursor = document.getElementById('mouseCursor');
+    console.log();
+    document.getElementById('mouseCursor').style.top = (e.y-200).toString()+"px";
+    document.getElementById('mouseCursor').style.left = (e.x-125).toString()+"px";
+;
+}
+
 document.querySelector('h1').addEventListener("mouseover",async function(){
     n = Math.floor(Math.random()*2)+1;
     for (let i = 0; i<2;i++){
