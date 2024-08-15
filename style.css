@@ -12,9 +12,7 @@ body{
     position:relative;
 }
 
-.jfjj{
-    background-color: red;
-}
+
 
 a{
     font-size: 1.2rem;
@@ -49,6 +47,8 @@ a{
 
 
 #container{
+    margin-bottom: 5vw;
+    padding-bottom: 5vw;
     margin: 10vw;
     margin-top: 5vw;
     height: 100vh;
@@ -66,6 +66,12 @@ h3{
     margin-top: 0;
     font-size: 2rem;
     margin-bottom: 10rem;
+}
+
+#about{
+    width: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
 }
 
 .background{
@@ -138,6 +144,8 @@ h3{
     height: 50vh;
     margin-bottom: 50px;
     position:relative;
+    box-shadow: -10px 10px #C75B7A;
+
 }
 
 
@@ -156,6 +164,8 @@ h3{
 .two{
     
     background-color: #ABE2E7;
+    box-shadow: -10px 10px #725BC7;
+
 }
 
 .two a{
@@ -174,6 +184,8 @@ h3{
 
 .three{
     background-color: #C75B7A;
+    box-shadow: -10px 10px #72CFB5;
+
 }
 
 .three img{
@@ -187,6 +199,10 @@ h3{
 .three h2{
     text-shadow: #72CFB5 0.3rem 0.3rem 0px;
 
+}
+
+#artificialPadding{
+    height: 50px;
 }
 
 @media screen and (max-width:600px) {
