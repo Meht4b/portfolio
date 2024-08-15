@@ -16,6 +16,11 @@ body{
     background-color: red;
 }
 
+a{
+    font-size: 1.2rem;
+    color: #C75B7A;
+}
+
 #mouseCursor{
     content: '';
     position: fixed;
@@ -106,7 +111,7 @@ h3{
 }
 
 .glitchEffectRedSmall{
-    text-shadow: hsl(343, 49%, 37%) 0.3rem 0 0px;
+    text-shadow: hsl(343, 49%, 37%) 0.3rem 0.3rem 0px;
 }
 
 .glitchEffect{
