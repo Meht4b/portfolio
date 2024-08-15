@@ -5,7 +5,7 @@ function sleep(ms) {
 window.onmousemove = e => {
     var cursor = document.getElementById('mouseCursor');
     console.log();
-    document.getElementById('mouseCursor').style.top = (e.y-200).toString()+"px";
+    document.getElementById('mouseCursor').style.top = (e.y-125).toString()+"px";
     document.getElementById('mouseCursor').style.left = (e.x-125).toString()+"px";
 ;
 }
