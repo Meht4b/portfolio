@@ -8,10 +8,10 @@ document.querySelector('h1').addEventListener("mouseover",async function(){
        
         this.classList.add('glitchEffectGreen');
         this.classList.remove('glitchEffectRed');
-        await sleep(Math.floor(Math.random()*50)+90);
+        await sleep(Math.floor(Math.random()*50)+40);
         this.classList.remove('glitchEffectGreen')
         this.classList.add('glitchEffect');
-        await sleep(Math.floor(Math.random()*50)+90);
+        await sleep(Math.floor(Math.random()*50)+40);
         this.classList.remove('glitchEffect');
         this.classList.add('glitchEffectRed');
     }

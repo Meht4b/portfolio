@@ -76,7 +76,7 @@ h2{
 }
 
 .glitchEffectGreen{
-    text-shadow: #308D73 -0.5rem 0.5rem 0px;
+    text-shadow: #308D73 0.5rem 0.5rem 0px;
 }
 
 .glitchEffectRedSmall{
@@ -98,5 +98,14 @@ h2{
     .squareViolet{
         height: 15rem;
         width: 15rem;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .squareViolet{
+        height: 15rem;
+        width: 15rem;
+        display: none;
     }
 }
