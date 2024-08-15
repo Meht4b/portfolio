@@ -1,11 +1,15 @@
 html{
     font-size: 10px;
+    background-color: black;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
 
 body{
     font-family: "Poppins",sans-serif;
-    background-color: lightblue;
-    color: #921A40;
+    
 }
 
 @media only screen and (min-width: 800px) {
@@ -16,8 +20,30 @@ body{
 
 #container{
     margin: 10vw;
+    margin-top: 5vw;
+    height: 100vh;
 }
 
 h1{
     font-size: 5rem;
+}
+
+
+
+.glitchEffectRed {
+    text-shadow : hsl(343, 49%, 37%) 0.5rem 0 0px;
+}
+
+.glitchEffectGreen{
+    text-shadow: #308D73 -0.5rem 0 0px;
+}
+
+.glitchEffect{
+    text-shadow: hsl(343, 49%, 37%) 0.5rem 0 0px,#308D73 -0.5rem 0 0px;
+}
+
+#innerContainer{
+    background-color: #C75B7A;
+    font-size: 2rem;
+    border-radius: 10px;
 }
