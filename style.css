@@ -31,8 +31,13 @@ h1{
 }
 
 h2{
+    font-size: 3.5rem;
+}
+
+h3{
     margin-top: 0;
     font-size: 2rem;
+    margin-bottom: 10rem;
 }
 
 .background{
@@ -92,6 +97,24 @@ h2{
     font-size: 2rem;
     border-radius: 10px;
 }
+
+.project{
+    background-color: hsl(73, 79%, 57%);
+    border-radius: 5px;
+    color: black;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+
+}
+
+.project img{
+    transform: scale(90%);
+    border-radius: 5px;
+    box-shadow: -10px 10px #C75B7A;
+}
+
 
 
 @media screen and (max-width:600px) {
