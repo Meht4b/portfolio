@@ -28,14 +28,57 @@ h1{
     font-size: 5rem;
 }
 
+h2{
+    margin-top: 0;
+    font-size: 2rem;
+}
 
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    
+    
+    z-index: -1;
+    width: 95svw;
+}
+
+.square{
+    position: absolute;
+
+    
+}
+
+.squareGreen{
+    top: 1rem;
+    left: 1rem;
+    height: 15rem;
+    width: 15rem;
+    background-color: #B0C75B;
+    box-shadow: 3rem 3rem #5BC7A8;
+
+}
+
+.squareViolet{
+    top: 1rem;
+    right: -2.5rem;
+    height: 30rem;
+    width: 30rem;
+    background-color: #725BC7;
+    box-shadow: -6rem 6rem #C75B7A;
+}
 
 .glitchEffectRed {
-    text-shadow : hsl(343, 49%, 37%) 0.5rem 0 0px;
+    text-shadow : hsl(343, 49%, 37%) 0.5rem 0.5rem 0px;
 }
 
 .glitchEffectGreen{
-    text-shadow: #308D73 -0.5rem 0 0px;
+    text-shadow: #308D73 -0.5rem 0.5rem 0px;
+}
+
+.glitchEffectRedSmall{
+    text-shadow: hsl(343, 49%, 37%) 0.3rem 0 0px;
 }
 
 .glitchEffect{
