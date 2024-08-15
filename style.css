@@ -16,7 +16,9 @@ body{
     html {
         font-size: 15px;
     }
+
   }
+
 
 #container{
     margin: 10vw;
@@ -89,4 +91,12 @@ h2{
     background-color: #C75B7A;
     font-size: 2rem;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width:600px) {
+    .squareViolet{
+        height: 15rem;
+        width: 15rem;
+    }
 }
