@@ -19,10 +19,10 @@ a{
     color: #C75B7A;
 }
 
-#mouseCursor{
+.mouseCursor{
     pointer-events: none; 
-
     content: '';
+    transition: 0.1s;
     position: fixed;
     padding: 0;
     margin:0;
@@ -34,6 +34,24 @@ a{
     height: 250px;
     background-color: white;
     border-radius: 50%;
+    mix-blend-mode: difference;
+
+}
+
+.screenInverted{
+    transition: 0.1s;
+    pointer-events: none; 
+    position: fixed;
+    padding: 0;
+    margin:0;
+    top: 0px;
+    left:500px;
+    z-index: 10;
+    z-index: 4;
+    width: 1000vh;
+    height: 100vw;
+    overflow: hidden;
+    background-color: white;
     mix-blend-mode: difference;
 }
 
@@ -65,7 +83,7 @@ h2{
 h3{
     margin-top: 0;
     font-size: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 #about{
@@ -96,8 +114,47 @@ h3{
     left: 1rem;
     height: 15rem;
     width: 15rem;
-    background-color: #B0C75B;
+    background-color: hsl(73, 49%, 57%);
     box-shadow: 3rem 3rem #5BC7A8;
+
+}
+
+.languageButton{
+    font-size: 2.5rem;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.languageButton::after{
+    content:'';
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 7px;
+    left: -7px;
+    z-index: -1;
+    background-color: #ABE2E7;
+    background-image: linear-gradient(90deg,black 10%,transparent 10%),linear-gradient(0deg,black 10%,transparent 10%);
+    border-radius: 5px;
+    background-size: 1rem 1rem;
+
+}
+.languageButton:hover{
+
+    transition: 0.2s;
+    
+}
+
+.languageButton:hover::after{
+    transition: 0.2s;
+    z-index: -10;
+    transform: translateX(-0.5rem) translateY(0.5rem);
+    
 
 }
 
@@ -107,7 +164,20 @@ h3{
     height: 30rem;
     width: 30rem;
     background-color: #725BC7;
-    box-shadow: -6rem 6rem #C75B7A;
+    
+}
+
+.squareViolet::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    background-image: linear-gradient(90deg,black 5%,transparent 5%),linear-gradient(0deg,black 5%,transparent 5%);
+    background-color: #C75B7A;
+    z-index: -10;
+    background-size: 3rem 3rem;
+    top: 6rem;
+    left: -6rem;
 }
 
 .glitchEffectRed {

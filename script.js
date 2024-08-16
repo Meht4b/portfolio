@@ -3,10 +3,11 @@ function sleep(ms) {
 }
 
 window.onmousemove = e => {
-    var cursor = document.getElementById('mouseCursor');
-    console.log();
-    document.getElementById('mouseCursor').style.top = (e.y-125).toString()+"px";
-    document.getElementById('mouseCursor').style.left = (e.x-125).toString()+"px";
+    if (document.getElementById('customCursor').classList.contains('mouseCursor')){
+    document.getElementById('customCursor').style.transition = '0s';
+    document.getElementById('customCursor').style.top = (e.y-125).toString()+"px";
+    document.getElementById('customCursor').style.left = (e.x-125).toString()+"px";}
+
 ;
 }
 
@@ -24,5 +25,34 @@ document.querySelector('h1').addEventListener("mouseover",async function(){
         this.classList.add('glitchEffectRed');
     }
     
+
+})
+
+document.getElementById('pythonButton').addEventListener('click',async function(){
+    document.getElementById('customCursor').style.transition = '0.1s'
+
+    document.getElementById('customCursor').classList.add('screenInverted');
+    document.getElementById('customCursor').classList.remove('mouseCursor');
+    
+    document.getElementById('customCursor').style.left = "0px";
+    document.getElementById('customCursor').style.top = "0px";
+    await sleep(100);
+    document.getElementById('customCursor').style.transition = '0s';
+
+})
+
+document.getElementById('webDevButton').addEventListener('click',async function(e){
+    document.getElementById('customCursor').style.transition = '0.1s'
+
+    document.getElementById('customCursor').classList.add('mouseCursor');
+
+    document.getElementById('customCursor').classList.remove('screenInverted');
+
+    document.getElementById('customCursor').style.left = (e.clientX-125).toString() +"px";
+    document.getElementById('customCursor').style.top = (e.clientY-125).toString() +"px";
+    await sleep(100);
+    document.getElementById('customCursor').style.transition = '0s';
+
+
 
 })
