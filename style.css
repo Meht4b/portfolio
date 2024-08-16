@@ -202,8 +202,26 @@ h3{
     border-radius: 10px;
 }
 
-#pythonProjects{
+#pythonProjects {
     display: none;
+}
+
+#pythonProjects img{
+    z-index: 10000;
+}
+
+#pythonProjects div::after{
+    content: '';
+    background-color: white;
+
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 .project{
@@ -219,6 +237,7 @@ h3{
     box-shadow: -10px 10px #C75B7A;
 
 }
+
 
 
 
