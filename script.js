@@ -5,8 +5,8 @@ function sleep(ms) {
 window.onmousemove = e => {
     if (document.getElementById('customCursor').classList.contains('mouseCursor')){
     document.getElementById('customCursor').style.transition = '0s';
-    document.getElementById('customCursor').style.top = (e.y-125).toString()+"px";
-    document.getElementById('customCursor').style.left = (e.x-125).toString()+"px";}
+    document.getElementById('customCursor').style.top = (e.y-75).toString()+"px";
+    document.getElementById('customCursor').style.left = (e.x-75).toString()+"px";}
 
 ;
 }
@@ -29,7 +29,11 @@ document.querySelector('h1').addEventListener("mouseover",async function(){
 })
 
 document.getElementById('pythonButton').addEventListener('click',async function(){
-    document.getElementById('customCursor').style.transition = '0.1s'
+    document.getElementById('webDevProjects').style.display = 'none';
+    document.getElementById('pythonProjects').style.display = 'block';
+
+
+    document.getElementById('customCursor').style.transition = '0.1s';
 
     document.getElementById('customCursor').classList.add('screenInverted');
     document.getElementById('customCursor').classList.remove('mouseCursor');
@@ -39,17 +43,22 @@ document.getElementById('pythonButton').addEventListener('click',async function(
     await sleep(100);
     document.getElementById('customCursor').style.transition = '0s';
 
+
 })
 
 document.getElementById('webDevButton').addEventListener('click',async function(e){
-    document.getElementById('customCursor').style.transition = '0.1s'
+    document.getElementById('webDevProjects').style.display = 'block';
+    document.getElementById('pythonProjects').style.display = 'none';
+
+
+    document.getElementById('customCursor').style.transition = '0.1s';
 
     document.getElementById('customCursor').classList.add('mouseCursor');
 
     document.getElementById('customCursor').classList.remove('screenInverted');
 
-    document.getElementById('customCursor').style.left = (e.clientX-125).toString() +"px";
-    document.getElementById('customCursor').style.top = (e.clientY-125).toString() +"px";
+    document.getElementById('customCursor').style.left = (e.clientX-75).toString() +"px";
+    document.getElementById('customCursor').style.top = (e.clientY-75).toString() +"px";
     await sleep(100);
     document.getElementById('customCursor').style.transition = '0s';
 
