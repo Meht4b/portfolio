@@ -292,6 +292,70 @@ h3{
 
 }
 
+.python{
+    color: white;
+    z-index: 100;
+}
+
+.python-one{
+    background-color: #3D17C4;
+    box-shadow: -10px 10px #38A485;
+    
+}
+
+.python-one img{
+    box-shadow: -10px 10px #38A485;
+
+}
+
+.python-one h2{
+    text-shadow: #38A485 0.3rem 0.3rem 0px;
+}
+
+.python-one a{
+    color: #38A485;
+}
+
+.python-two{
+    background-color: hsl(5, 56%, 79%);
+    
+}
+
+.python-three{
+    background-color: hsl(154, 56%, 79%);
+    box-shadow: -10px 10px hsl(170, 49%, 57%);
+}
+
+.python-three h2{
+    text-shadow: hsl(170, 49%, 57%) 0.3rem 0.3rem 0px;
+}
+
+.python-three a{
+    color: hsl(170, 49%, 57%);
+}
+
+.python-three img{
+    box-shadow: -10px 10px hsl(170, 49%, 57%);
+}
+
+.python-four{
+    background-color: #6482AD;
+    box-shadow: -10px 10px hsl(20, 17%, 76%);
+}
+
+.python-four h2{
+    text-shadow: hsl(20, 17%, 66%) 0.3rem 0.3rem 0px;
+
+}
+
+.python-four a{
+    color: hsl(20,17%,66%)
+}
+
+.python-four img{
+    box-shadow: -10px 10px hsl(20, 17%, 66%);
+}
+
 #artificialPadding{
     height: 50px;
 }
